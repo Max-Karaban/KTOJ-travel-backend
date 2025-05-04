@@ -1,4 +1,3 @@
-// controllers/placeController.js
 const placeDao = require("../dao/placeDao");
 const tripDao = require("../dao/tripDao");
 const { createPlaceObject } = require("../models/place");
@@ -6,7 +5,6 @@ const { createPlaceObject } = require("../models/place");
 function createPlace(req, res) {
   const dtoIn = req.body;
 
-  // Validation
   if (!dtoIn.tripId || !dtoIn.name) {
     return res.status(400).json({ error: "tripId and name are required." });
   }
