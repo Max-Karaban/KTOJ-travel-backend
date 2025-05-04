@@ -1,0 +1,51 @@
+General Description
+/*This is the backend for the "KTOJ" project. It allows you to create trips, add places to them, update and delete them.
+
+File server.js
+{
+  Starts the Express server
+  Port: 3000
+  Enables the /trip and /place routes
+}
+
+Structure
+{
+  controllers — request processing logic
+  routes — HTTP route definition
+  models— trip/place object creation
+  dao — JSON file reading/writing
+}
+
+Trip API:
+{
+  1. POST /trip/create
+    Creates a new trip
+    Input: title, startDate, endDate, tripType, route
+  2. GET /trip/list
+    Lists all trips
+  3. POST /trip/update
+    Updates an existing trip by id
+  4. POST /trip/delete
+    Deletes a trip by id
+}
+Place API:
+{
+  1. POST /place/create
+    Adds a place to a trip (tripId)
+  2. GET /place/listByTripId?tripId=...
+    Displays places by trip id
+  3. POST /place/update
+    Updates a place by id
+  4. POST /place/delete
+    Deletes a place by id
+{
+
+Features:
+
+Data is stored in JSON;
+UUID is generated in models;
+No database (only local JSON);
+The project is not yet completed, there will be improvements and changes;
+
+Author:
+Max Karaban — 2025
