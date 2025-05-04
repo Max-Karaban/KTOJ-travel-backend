@@ -1,0 +1,17 @@
+[
+  {
+    "id": "bf1ade9c-abce-421a-8fe5-4094d4283b97",
+    "title": "New Trip",
+    "description": "Test trip",
+    "startDate": "2025-07-01",
+    "endDate": "2025-07-10",
+    "tripType": "Solo Trip",
+    "interests": [
+      "Food"
+    ],
+    "route": [
+      "Paris",
+      "Berlin"
+    ]
+  }
+]

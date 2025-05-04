@@ -1,0 +1,18 @@
+[
+  {
+    "id": "74e958ef-399f-4538-8e3b-025fd5abd9c4",
+    "tripId": "54ce39b2-c3ac-419e-b572-05d95d3de344",
+    "name": "Eiffel Tower",
+    "location": "Updated location",
+    "description": "Famous landmark",
+    "note": "Go early in the morning"
+  },
+  {
+    "id": "56701072-1f3d-4e9c-b68f-e2e54fd39af4",
+    "tripId": "54ce39b2-c3ac-419e-b572-05d95d3de344",
+    "name": "Eiffel Tower",
+    "location": "Paris, France",
+    "description": "Famous landmark",
+    "note": "Buy tickets online"
+  }
+]
