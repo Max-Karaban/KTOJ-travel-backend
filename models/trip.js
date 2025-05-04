@@ -1,16 +1,14 @@
-// models/trip.js
 module.exports = {
   createTripObject: (dtoIn) => {
     return {
-      id: crypto.randomUUID(),           // unique trip ID
-      title: dtoIn.title,                // trip title
-      description: dtoIn.description,    // description
-      startDate: dtoIn.startDate,        // start date
-      endDate: dtoIn.endDate,            // end date
-      tripType: dtoIn.tripType,          // trip type
-      interests: dtoIn.interests || [],  // interests (optional)
-      route: dtoIn.route || []           // route (array of cities)
-	
+      id: crypto.randomUUID(),
+      title: dtoIn.title,
+      description: dtoIn.description,
+      startDate: dtoIn.startDate,
+      endDate: dtoIn.endDate,
+      tripType: dtoIn.tripType,
+      interests: dtoIn.interests || [],
+      route: dtoIn.route || []
     };
   }
 };
