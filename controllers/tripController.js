@@ -1,4 +1,3 @@
-// controllers/tripController.js
 const tripDao = require("../dao/tripDao");
 const { createTripObject } = require("../models/trip");
 
@@ -61,7 +60,7 @@ function deleteTrip(req, res) {
     return res.status(404).json({ error: "Trip not found." });
   }
 
-  trips.splice(index, 1); // удаляем поездку
+  trips.splice(index, 1);
   tripDao.saveAll(trips);
 
   res.json({ success: true, deletedTripId: id });
